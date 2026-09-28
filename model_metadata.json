@@ -1,0 +1,88 @@
+{
+  "features": [
+    "age",
+    "gender",
+    "heart_rate",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "ck_mb",
+    "troponin"
+  ],
+  "best_params": {
+    "clf__C": 0.5,
+    "clf__class_weight": null,
+    "clf__penalty": "l1"
+  },
+  "cv_auc": 0.969120762922994,
+  "test_auc": 0.9688937303316387,
+  "test_metrics_threshold_0.5": {
+    "threshold": 0.5,
+    "accuracy": 0.928030303030303,
+    "precision": 0.9440993788819876,
+    "recall_sensitivity": 0.9382716049382716,
+    "specificity": 0.9117647058823529,
+    "f1": 0.9411764705882353,
+    "mcc": 0.8485228081235275,
+    "tn": 93,
+    "fp": 9,
+    "fn": 10,
+    "tp": 152
+  },
+  "test_metrics_tuned_threshold": {
+    "threshold": 0.46,
+    "accuracy": 0.9242424242424242,
+    "precision": 0.9382716049382716,
+    "recall_sensitivity": 0.9382716049382716,
+    "specificity": 0.9019607843137255,
+    "f1": 0.9382716049382716,
+    "mcc": 0.8402323892519971,
+    "tn": 92,
+    "fp": 10,
+    "fn": 10,
+    "tp": 152
+  },
+  "f1_optimal_threshold": 0.4599999999999999,
+  "ranges": {
+    "age": {
+      "min": 14.0,
+      "max": 103.0,
+      "median": 58.0
+    },
+    "gender": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    "heart_rate": {
+      "min": 20.0,
+      "max": 135.0,
+      "median": 74.0
+    },
+    "systolic_bp": {
+      "min": 42.0,
+      "max": 223.0,
+      "median": 124.0
+    },
+    "diastolic_bp": {
+      "min": 38.0,
+      "max": 154.0,
+      "median": 72.0
+    },
+    "glucose": {
+      "min": 35.0,
+      "max": 541.0,
+      "median": 116.0
+    },
+    "ck_mb": {
+      "min": 0.321,
+      "max": 300.0,
+      "median": 2.85
+    },
+    "troponin": {
+      "min": 0.001,
+      "max": 10.3,
+      "median": 0.014
+    }
+  }
+}
